@@ -39,3 +39,4 @@ except AssertionError:
     print("Ничего не найдено")
 except OutOfDataError:
     print("Нет данных")
+#fffffffffffffffffffff
