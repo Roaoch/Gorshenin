@@ -12,5 +12,13 @@ class Salary:
         else:
             self.salary_currency = salary_property[2]
 
+    def __str__(self):
+        return "{0} - {1} ({2}) ({3})".format(
+            Utils.format_float(self.salary_from),
+            Utils.format_float(self.salary_to),
+            Utils.translation_currency[self.salary_currency],
+            Utils.translation_gross[self.salary_gross]
+        )
+
     def get_salary(self) -> float:
         return (self.salary_from + self.salary_to) / 2 * Utils.currency_to_rub[self.salary_currency]
