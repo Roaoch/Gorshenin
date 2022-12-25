@@ -53,3 +53,4 @@ except InstructionError:
     print("Неверная комманда")
 except OutOfDataError:
     print("Нет данных")
+#ggggggggggggggg
